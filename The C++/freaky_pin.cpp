@@ -14,7 +14,7 @@ int main() {
 
   while (pin != 1234 && tries < 3) {
     
-    std::cout << "That was wrong, Try again now or you're getting fucked. \n ";
+    std::cout << "That was wrong, Try again now or you're getting kidnapped. \n ";
     std::cin >> pin;
     tries++;
     
