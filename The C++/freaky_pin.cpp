@@ -12,7 +12,7 @@ int main() {
 
   tries++;
 
-  while (pin != 1234 && tries < 3) {
+  while (pin != 6969 && tries < 3) {
     
     std::cout << "That was wrong, Try again now or you're getting kidnapped. \n ";
     std::cin >> pin;
