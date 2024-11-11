@@ -27,6 +27,7 @@ auto now = std::chrono::system_clock::now();
     std::cout << "Hello there! What's ya name vruh?\n";
     std::cin >> user;
     std::cout << "Nice to meet ya, " << user << "!!\n";
+
     std::cout << "My name is " << name << "!\n";
     std::cout << "I'm " << age << " years old! Say, how old are You?\n";
     std::cin >> userage;
@@ -45,7 +46,15 @@ auto now = std::chrono::system_clock::now();
     std::cout << "My favorite coding language is " << fav_code_language << "!!\n";
     std::cout << "What's your favorite coding language?\n";
     std::cin >> fav_user_lang;
-    std::cout << "Fire!!\n";
+    if (fav_user_lang == fav_code_language) {
+        std::cout << "WOW, YOU'RE JUST LIKE ME LMAO\n";
+    }
+    if (fav_user_lang == "java" || fav_user_lang == "Java") {
+        std::cout << "why...\n";
+    }
+    else {
+std::cout << "Fire!!\n";
+    }
     std::cout << "-------------------------------------------------------\n";
     std::cout << "I'm currently learning " << learning << "!!\n";
     std::cout << "-------------------------------------------------------\n";
