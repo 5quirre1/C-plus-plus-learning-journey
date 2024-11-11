@@ -46,7 +46,7 @@ auto now = std::chrono::system_clock::now();
     std::cout << "My favorite coding language is " << fav_code_language << "!!\n";
     std::cout << "What's your favorite coding language?\n";
     std::cin >> fav_user_lang;
-    if (fav_user_lang == fav_code_language) {
+    if (fav_user_lang == fav_code_language || fav_user_lang == "html") {
         std::cout << "WOW, YOU'RE JUST LIKE ME LMAO\n";
     }
     if (fav_user_lang == "java" || fav_user_lang == "Java") {
