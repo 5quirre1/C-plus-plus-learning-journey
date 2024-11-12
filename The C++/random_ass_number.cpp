@@ -7,6 +7,6 @@ int main() {
   
  
   int the_amazing_random_number = rand() % 29;
-  std::cout << "Your very random ass number is " << the_amazing_random_number;
+  std::cout << "Your very random ahh number is " << the_amazing_random_number;
   
 }
