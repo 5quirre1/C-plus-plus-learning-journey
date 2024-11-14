@@ -368,7 +368,7 @@ std::string ok;
    }
    if (ok == "Bugs" || ok == "bugs") {
     std::cout << "-------------------------------------------------------";
-       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg";
+       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
    }
    adoption();   
     viewingarea();
