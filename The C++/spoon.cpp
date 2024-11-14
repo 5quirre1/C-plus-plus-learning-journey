@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 std::string spoonname;
+
 void adoption() {
     std::string username;
     std::cout << "\n-------------------------------------------------------\n";
@@ -9,7 +10,7 @@ void adoption() {
        std::cin >> username;
        if (username == "Greg" || username == "greg") {
            std::cout << "oh, so you are greg, mb\n";
-           std::cout << "K, so " << username << ", let's take you over to the spoon viewing area so you can check out the pet spoons";
+           std::cout << "Dominic: K, so " << username << ", let's take you over to the spoon viewing area so you can check out the pet spoons";
            
        }
        else {
@@ -22,10 +23,10 @@ void adoption() {
          std::string useroption;
          std::string buy2;
          std::string buy3;
-         std::cout << "\n\nWelcome to the viewing area where you will find your pet spoon for life\n";
+         std::cout << "\n\n Dominic: Welcome to the viewing area where you will find your pet spoon for life\n";
          std::cout << "-------------------------------------------------------\n";
-    std::cout << "There is only one pet spoon left. It's a She and is 7 months old\n";
-    std::cout << "Do you want to buy her? She's only $3\n\n";
+    std::cout << "Dominic: There is only one pet spoon left. It's a She and is 7 months old\n";
+    std::cout << "Dominic: Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, y/n\n";
     std::cout << "You: ";
     std::cin >> buy;
@@ -37,18 +38,25 @@ void adoption() {
         std::cout << "So the thing about that is that you can't say no. You have 2 options. Buy the spoon or quit the game. (Buy or quit)\n\n";
         std::cout << "You: ";
         std::cin >> useroption;
+        if (useroption == "quit" || useroption == "Quit") {
+        std::cout << "No one likes you.";
+        adoption();
+    }
         if (useroption == "Buy" || useroption == "buy") {
             std::cout << "Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, y/n\n";
     std::cout << "You: ";
     std::cin >> buy2;
+        }
+    }
+        
     
     if (buy2 == "y" || buy2 == "yes" || buy2 == "Yes") {
         std::cout << "You have bought your very first pet spoon! Now that you have bought a pet spoon, you're gonna need some supplies so that you can take care of your spoon!\n\n";
     }
     if (buy2 == "n" || buy2 == "no" || buy2 == "No") {
         std::cout << "Nope, try again.\n\n";
-        std::cout << "Do you want to buy her? She's only $3\n\n";
+        std::cout << "Dominic: Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, (y)\n";
     std::cout << "You: ";
     std::cin >> buy3;
@@ -58,8 +66,8 @@ void adoption() {
          std::cout << "You have bought your very first pet spoon! Now that you have bought a pet spoon, you're gonna need some supplies so that you can take care of your spoon!\n\n";
     }
     }
-    }
-    }
+    
+    
     void store_at_start() {
         double money;
         double moneybefore;
@@ -264,7 +272,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
                 std::cout << "Your pet spoon is bored. Let's take your pet spoon on a walk! To take your pet on a walk, call your pet and Enter 'Walk'\n";
                 std::cout << "-------------------------------------------------------\n";
-                std::cout << "You: ";
+                std::cout << "You : ";
                 std::cin >> call_tot;
                               if (call_tot == spoonname) {
                     std::cout << spoonname << " walks up to you!\n";
@@ -302,7 +310,9 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
             }
             void game() {
-                std::cout << "Your spoon has died. You have lost the game /j\n";
+                std::string options;
+                std::cout << spoonname << "walks around the house, exploring the every part of the house";
+                std::cin >> options;
             }
            
                 
@@ -322,7 +332,7 @@ std::string ok;
     std::cout << " SSSSS    P       OOO   OOO   N   N " << std::endl;
     std::cout << "Made by 5quirre1 and Nomaakip\n"; 
     std::cout << "-------------------------------------------------------\n";
-    std::cout << "Welcome to Spoon. Say info for what Spoon  is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
+    std::cout << "Welcome to Spoon. Say 'Info' for what Spoon is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
     std::cin >> what;
    if (what == "info" || what == "Info" || what == "INFO") {
     std::cout << "-------------------------------------------------------";
