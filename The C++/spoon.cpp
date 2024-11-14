@@ -313,6 +313,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::string options;
                 std::cout << spoonname << "walks around the house, exploring the every part of the house";
                 std::cin >> options;
+                if ()
             }
            
                 
