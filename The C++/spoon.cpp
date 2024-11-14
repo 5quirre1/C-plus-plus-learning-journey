@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 std::string spoonname;
 
 void adoption() {
@@ -310,11 +311,26 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
             }
             void game() {
+                std::string food_options;
                 std::string options;
-                std::cout << spoonname << "walks around the house, exploring the every part of the house";
+                std::cout << spoonname << " walks around the house, exploring the every part of the house\n";
                 std::cin >> options;
-                if ()
-            }
+                // the feed stuff for options
+                if (options == "feed" || options == "Feed") {
+                    std::cout << "-------------------------------------------------------\n";
+                std::cout << "School pizza      Bread       Watermelon\n";
+                }
+                std::cin >> food_options;
+                if (food_options == "School Pizza" || food_options == "school pizza" || food_options == "School pizza" ||
+                food_options == "1") {
+                    std::cout << spoonname << " ate the School pizza! Gross..";
+                }
+                if (food_options == "Bread" || food_option == "bread" ||
+                food_options == "2") {
+                    std::cout << spoonname << " ate the Bread!  yummers";
+                }
+                }
+            
            
                 
                 
@@ -352,7 +368,7 @@ std::string ok;
    }
    if (ok == "Bugs" || ok == "bugs") {
     std::cout << "-------------------------------------------------------";
-       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
+       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg";
    }
    adoption();   
     viewingarea();
